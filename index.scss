@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
+*, html
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth !important;
+}
+
+.maincontainer
+{
+    display: flex;
+    .leftnav
+    {
+        position: fixed;
+        left: 0;
+        width: 5vw;
+        height: 100vh;
+        background-color: white;
+        margin-right: 5vw;
+        border-right: 0.25vw rgb(205, 204, 204) solid;
+        overflow: scroll;
+        overflow-y: scroll;
+        &::-webkit-scrollbar
+        {
+            display: none;
+        }
+        #companylogo
+        {
+            text-align: center;
+            top: 1vh;
+            height: 3vh;
+            width: 3vh;
+            border-radius: 10rem;
+            border: 1vh solid black;
+            margin: auto;
+            margin-top: 1vh;
+            margin-bottom: 2vh;
+            overflow: hidden;
+            img 
+            {
+                width: 100%;
+            }
+        }
+        #menubtn
+        {
+            padding: 28vh 0 28vh 0;
+            border: 1px solid black;
+            background-color: transparent;
+            border: none;
+            img 
+            {
+                width: 50%;
+            }
+        }
+        .lowerleftnav
+        {
+            margin: auto;
+            bottom: 1vh;
+            margin-top: 5vh;
+            .countryimg, .profilepic
+            {
+                text-align: center;
+                height: 3vh;
+                width: 3vh;
+                border-radius: 10rem;
+                border: 1vh solid black;
+                margin: auto;
+                margin-top: 1vh;
+                overflow: hidden;
+                img 
+                {
+                    width: 100%;
+                }
+            }
+            .dividerline
+            {
+                background-color: rgb(228, 227, 227);
+                height: 0.25rem;
+                margin-top: 1vh;
+                margin-left: 0.25rem;
+                margin-right: 0.25rem;
+            }
+        }
+    }
+    .mainbody
+    {
+        position: block;
+        width: 100%;
+        margin-left: 5vw;
+        margin-top: 14vh;
+        border-left: 1vh solid lightgrey;
+        .topbar
+        {
+            position: fixed;
+            top: 0;
+            display: flex;
+            padding: 2vh;
+            background-color: white;
+            width: 95%;
+            .tags
+            {
+                width: 75%;
+                .hashtags
+                {
+                    ul 
+                    {
+                        display: flex;
+                        list-style: none;
+                        color: rgb(0, 166, 255);
+                        .tag
+                        {
+                            margin: 0 1vw 0 1vw;
+                        }
+                    }
+                }
+                .collections
+                {
+                    display: flex;
+                    padding: 1vw;
+                    .collectionbtn
+                    {
+                        button 
+                        {
+                            background: black;
+                            color: white;
+                            padding: 1vh 3vh 1vh 3vh;
+                            border-radius: 1rem;
+                            border: none;
+                        }
+                    }
+                    .collectiontags
+                    {
+                        width: 60%;
+                        margin-left: 1vh;
+                        ul 
+                        {
+                            list-style: none;
+                            display: flex;
+                            overflow-x: scroll;
+                            .collectiontag
+                            {
+                                padding: 1vh 3vh 1vh 3vh;
+                                border-radius: 1.5rem;
+                                border: none;
+                                border: 1px black solid;
+                                margin: 0 1vh 0 1vh;
+                            }
+                        }
+                    }
+                }
+            }
+            .searchbar
+            {
+                margin: auto;
+                input 
+                {
+                    width: 20vw;
+                    height: 3vh;
+                    border: none;
+                    border-bottom: 2px solid black;
+                    outline: none;
+                }
+            }
+        }
+        .newsitems{
+            display: block;
+            padding-bottom: 3vh;
+            background-color: rgb(0, 0, 255);
+        }
+        .countrynewsitems
+        {
+            display: flex;
+            width: 1450px;
+            padding: 1vh;
+            padding-top: 3vh;
+            overflow: scroll;
+            overflow-x: scroll;
+            // box-shadow: 3px 3px 3px 3px rgb(150, 147, 147);
+            box-shadow: 3px 3px 3px 3px rgb(40, 178, 224);
+            margin-bottom: 3vh;
+            background-color: rgb(177, 223, 238);
+            &::-webkit-scrollbar
+            {
+                display: none;
+            }
+            .newsitem
+            {
+                margin: 1vh 3vw 1vh 3vw;
+                min-width: 400px;
+                .headernewsitem
+                {
+                    height: 5%;
+                    width: 100%;
+                    padding: 1vh 0 1vh 0;
+                    .user
+                    {
+                        .userimg
+                        {
+                            img 
+                            {
+                                min-height: 2vh;
+                                min-width: 2vh;
+                            }
+                        }
+                        .username
+                        {
+                            color: black;
+                            font-weight: bold;
+                        }
+                    }
+                    .usertag
+                    {
+                        color: black;
+                        background: rgb(250, 249, 249);
+                        border-radius: 1rem;
+                        padding: 0.5vh 1vh 0.5vh 1vh;
+                        margin-left: 2vw;
+                        font-size: small;
+                    }
+                    .btns
+                    {
+                        float: right;
+                        margin-right: 1vh;
+                        .sharebtn
+                        {
+                            padding: 0.5vh 1vh 0.5vh 1vh;
+                            border-radius: 1rem;
+                            background-color: white;
+                        }
+                        .collectbtn
+                        {
+                            padding: 0.5vh 1vh 0.5vh 1vh;
+                            border-radius: 1rem;
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+                }
+                .newstags
+                {
+                    display: flex;
+                    .newstag
+                    {
+                        padding: 0.5vh 1vh 0.5vh 1vh;
+                        font-size: x-small;
+                        background-color: red;
+                        color: white;
+                        border-radius: 1rem;
+                        margin: 0 0.5vh 0 0.5vh;
+                    }
+                }
+                .heading
+                {
+                    font-size: xx-large;
+                    font-family: 'Raleway', sans-serif;
+                }
+                .newsinfo
+                {
+                    display: flex;
+                    padding: 4vh 0 3vh 0;
+                    .rating
+                    {
+                        padding-left: 0.5vw;
+                    }
+                    .views
+                    {
+                        margin-left: 5vw;
+                    }
+                }
+                .newsimg 
+                {
+                    min-height: 35vh;
+                    width: 100%;
+                    background-size: contain;
+                    img 
+                    {
+                        max-width: 100%;
+                        height: 35vh;
+                        object-fit: fill;
+                        margin: auto;
+                    }
+                }
+                .inevennewsitem
+                {
+                    margin-bottom: 5vh;
+                    .headernewsitem
+                    {
+                        height: 5%;
+                        width: 100%;
+                        padding: 1vh 0 1vh 0;
+                        .user
+                        {
+                            .userimg
+                            {
+                                img 
+                                {
+                                    min-height: 2vh;
+                                    min-width: 2vh;
+                                }
+                            }
+                            .username
+                            {
+                                color: black;
+                                font-weight: bold;
+                            }
+                        }
+                        .usertag
+                        {
+                            color: black;
+                            background: rgb(250, 249, 249);
+                            border-radius: 1rem;
+                            padding: 0.5vh 1vh 0.5vh 1vh;
+                            margin-left: 2vw;
+                            font-size: small;
+                        }
+                        .btns
+                        {
+                            float: right;
+                            margin-right: 1vh;
+                            .sharebtn
+                            {
+                                padding: 0.5vh 1vh 0.5vh 1vh;
+                                border-radius: 1rem;
+                                background-color: white;
+                            }
+                            .collectbtn
+                            {
+                                padding: 0.5vh 1vh 0.5vh 1vh;
+                                border-radius: 1rem;
+                                background-color: black;
+                                color: white;
+                            }
+                        }
+                    }
+                    .newstags
+                    {
+                        display: flex;
+                        .newstag
+                        {
+                            padding: 0.5vh 1vh 0.5vh 1vh;
+                            font-size: x-small;
+                            background-color: red;
+                            color: white;
+                            border-radius: 1rem;
+                            margin: 0 0.5vh 0 0.5vh;
+                        }
+                    }
+                    .heading
+                    {
+                        padding-top: 1vh;
+                        font-size: x-large;
+                        font-weight: bold;
+                    }
+                    .newsdesc
+                    {
+                        padding-top: 1vh;
+                    }
+                    .newsinfo
+                    {
+                        display: flex;
+                        padding: 4vh 0 3vh 0;
+                        .rating
+                        {
+                            padding-left: 0.5vw;
+                        }
+                        .views
+                        {
+                            margin-left: 5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

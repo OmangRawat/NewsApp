@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap");
+*, html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth !important;
+}
+
+.maincontainer {
+  display: flex;
+}
+.maincontainer .leftnav {
+  position: fixed;
+  left: 0;
+  width: 5vw;
+  height: 100vh;
+  background-color: white;
+  margin-right: 5vw;
+  border-right: 0.25vw rgb(205, 204, 204) solid;
+  overflow: scroll;
+  overflow-y: scroll;
+}
+.maincontainer .leftnav::-webkit-scrollbar {
+  display: none;
+}
+.maincontainer .leftnav #companylogo {
+  text-align: center;
+  top: 1vh;
+  height: 3vh;
+  width: 3vh;
+  border-radius: 10rem;
+  border: 1vh solid black;
+  margin: auto;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  overflow: hidden;
+}
+.maincontainer .leftnav #companylogo img {
+  width: 100%;
+}
+.maincontainer .leftnav #menubtn {
+  padding: 28vh 0 28vh 0;
+  border: 1px solid black;
+  background-color: transparent;
+  border: none;
+}
+.maincontainer .leftnav #menubtn img {
+  width: 50%;
+}
+.maincontainer .leftnav .lowerleftnav {
+  margin: auto;
+  bottom: 1vh;
+  margin-top: 5vh;
+}
+.maincontainer .leftnav .lowerleftnav .countryimg, .maincontainer .leftnav .lowerleftnav .profilepic {
+  text-align: center;
+  height: 3vh;
+  width: 3vh;
+  border-radius: 10rem;
+  border: 1vh solid black;
+  margin: auto;
+  margin-top: 1vh;
+  overflow: hidden;
+}
+.maincontainer .leftnav .lowerleftnav .countryimg img, .maincontainer .leftnav .lowerleftnav .profilepic img {
+  width: 100%;
+}
+.maincontainer .leftnav .lowerleftnav .dividerline {
+  background-color: rgb(228, 227, 227);
+  height: 0.25rem;
+  margin-top: 1vh;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+.maincontainer .mainbody {
+  position: block;
+  width: 100%;
+  margin-left: 5vw;
+  margin-top: 14vh;
+  border-left: 1vh solid lightgrey;
+}
+.maincontainer .mainbody .topbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  padding: 2vh;
+  background-color: white;
+  width: 95%;
+}
+.maincontainer .mainbody .topbar .tags {
+  width: 75%;
+}
+.maincontainer .mainbody .topbar .tags .hashtags ul {
+  display: flex;
+  list-style: none;
+  color: rgb(0, 166, 255);
+}
+.maincontainer .mainbody .topbar .tags .hashtags ul .tag {
+  margin: 0 1vw 0 1vw;
+}
+.maincontainer .mainbody .topbar .tags .collections {
+  display: flex;
+  padding: 1vw;
+}
+.maincontainer .mainbody .topbar .tags .collections .collectionbtn button {
+  background: black;
+  color: white;
+  padding: 1vh 3vh 1vh 3vh;
+  border-radius: 1rem;
+  border: none;
+}
+.maincontainer .mainbody .topbar .tags .collections .collectiontags {
+  width: 60%;
+  margin-left: 1vh;
+}
+.maincontainer .mainbody .topbar .tags .collections .collectiontags ul {
+  list-style: none;
+  display: flex;
+  overflow-x: scroll;
+}
+.maincontainer .mainbody .topbar .tags .collections .collectiontags ul .collectiontag {
+  padding: 1vh 3vh 1vh 3vh;
+  border-radius: 1.5rem;
+  border: none;
+  border: 1px black solid;
+  margin: 0 1vh 0 1vh;
+}
+.maincontainer .mainbody .topbar .searchbar {
+  margin: auto;
+}
+.maincontainer .mainbody .topbar .searchbar input {
+  width: 20vw;
+  height: 3vh;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+}
+.maincontainer .mainbody .newsitems {
+  display: block;
+  padding-bottom: 3vh;
+  background-color: rgb(0, 0, 255);
+}
+.maincontainer .mainbody .countrynewsitems {
+  display: flex;
+  width: 1450px;
+  padding: 1vh;
+  padding-top: 3vh;
+  overflow: scroll;
+  overflow-x: scroll;
+  box-shadow: 3px 3px 3px 3px rgb(40, 178, 224);
+  margin-bottom: 3vh;
+  background-color: rgb(177, 223, 238);
+}
+.maincontainer .mainbody .countrynewsitems::-webkit-scrollbar {
+  display: none;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem {
+  margin: 1vh 3vw 1vh 3vw;
+  min-width: 400px;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .headernewsitem {
+  height: 5%;
+  width: 100%;
+  padding: 1vh 0 1vh 0;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .headernewsitem .user .userimg img {
+  min-height: 2vh;
+  min-width: 2vh;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .headernewsitem .user .username {
+  color: black;
+  font-weight: bold;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .headernewsitem .usertag {
+  color: black;
+  background: rgb(250, 249, 249);
+  border-radius: 1rem;
+  padding: 0.5vh 1vh 0.5vh 1vh;
+  margin-left: 2vw;
+  font-size: small;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .headernewsitem .btns {
+  float: right;
+  margin-right: 1vh;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .headernewsitem .btns .sharebtn {
+  padding: 0.5vh 1vh 0.5vh 1vh;
+  border-radius: 1rem;
+  background-color: white;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .headernewsitem .btns .collectbtn {
+  padding: 0.5vh 1vh 0.5vh 1vh;
+  border-radius: 1rem;
+  background-color: black;
+  color: white;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .newstags {
+  display: flex;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .newstags .newstag {
+  padding: 0.5vh 1vh 0.5vh 1vh;
+  font-size: x-small;
+  background-color: red;
+  color: white;
+  border-radius: 1rem;
+  margin: 0 0.5vh 0 0.5vh;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .heading {
+  font-size: xx-large;
+  font-family: "Raleway", sans-serif;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .newsinfo {
+  display: flex;
+  padding: 4vh 0 3vh 0;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .newsinfo .rating {
+  padding-left: 0.5vw;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .newsinfo .views {
+  margin-left: 5vw;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .newsimg {
+  min-height: 35vh;
+  width: 100%;
+  background-size: contain;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .newsimg img {
+  max-width: 100%;
+  height: 35vh;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin: auto;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .inevennewsitem {
+  margin-bottom: 5vh;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .inevennewsitem .headernewsitem {
+  height: 5%;
+  width: 100%;
+  padding: 1vh 0 1vh 0;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .inevennewsitem .headernewsitem .user .userimg img {
+  min-height: 2vh;
+  min-width: 2vh;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .inevennewsitem .headernewsitem .user .username {
+  color: black;
+  font-weight: bold;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .inevennewsitem .headernewsitem .usertag {
+  color: black;
+  background: rgb(250, 249, 249);
+  border-radius: 1rem;
+  padding: 0.5vh 1vh 0.5vh 1vh;
+  margin-left: 2vw;
+  font-size: small;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .inevennewsitem .headernewsitem .btns {
+  float: right;
+  margin-right: 1vh;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .inevennewsitem .headernewsitem .btns .sharebtn {
+  padding: 0.5vh 1vh 0.5vh 1vh;
+  border-radius: 1rem;
+  background-color: white;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .inevennewsitem .headernewsitem .btns .collectbtn {
+  padding: 0.5vh 1vh 0.5vh 1vh;
+  border-radius: 1rem;
+  background-color: black;
+  color: white;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .inevennewsitem .newstags {
+  display: flex;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .inevennewsitem .newstags .newstag {
+  padding: 0.5vh 1vh 0.5vh 1vh;
+  font-size: x-small;
+  background-color: red;
+  color: white;
+  border-radius: 1rem;
+  margin: 0 0.5vh 0 0.5vh;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .inevennewsitem .heading {
+  padding-top: 1vh;
+  font-size: x-large;
+  font-weight: bold;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .inevennewsitem .newsdesc {
+  padding-top: 1vh;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .inevennewsitem .newsinfo {
+  display: flex;
+  padding: 4vh 0 3vh 0;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .inevennewsitem .newsinfo .rating {
+  padding-left: 0.5vw;
+}
+.maincontainer .mainbody .countrynewsitems .newsitem .inevennewsitem .newsinfo .views {
+  margin-left: 5vw;
+}/*# sourceMappingURL=index.css.map */
